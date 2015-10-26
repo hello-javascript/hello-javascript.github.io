@@ -6211,6 +6211,7 @@ hr {
 }
 .post pre {
   overflow: hidden;
+  width: 100%;
 }
 .post hr {
   display: block;
