@@ -593,7 +593,7 @@ header nav ul li a:hover {
   }
 }
 #main section.post {
-  background: #fafafa;
+  background: #fff;
   margin-bottom: 0.125em;
 }
 #main section.post a {
@@ -640,7 +640,7 @@ header nav ul li a:hover {
   margin-left: 10% !important;
 }
 #page-nav {
-  background: #fafafa;
+  background: #fff;
   text-align: center;
   overflow: hidden;
 }
@@ -716,7 +716,7 @@ header nav ul li a:hover {
   margin: 1em 0;
   width: 97%;
   padding: 2em 0 2em 3%;
-  background: #fafafa;
+  background: #fff;
   border-left: 0.5em solid #ccc;
 }
 @media only screen and (min-width: 1024px) {
@@ -800,7 +800,7 @@ header nav ul li a:hover {
 }
 .post,
 .page {
-  background: #fafafa;
+  background: #fff;
 }
 .post a,
 .page a {
@@ -932,7 +932,7 @@ article .article-content blockquote {
   font-size: 110%;
 }
 article .article-content blockquote footer {
-  background: #fafafa;
+  background: #fff;
   padding: 0;
   margin: 0;
   font-size: 80%;
@@ -1061,7 +1061,7 @@ article .article-content .right {
   float: right;
 }
 footer.article-footer {
-  background: #fafafa;
+  background: #fff;
   padding: 0 4%;
   margin: 0;
   border-top: 1px solid #dbdbdb;
@@ -1505,7 +1505,7 @@ section.comment {
   }
 }
 #asidepart {
-  background: #fafafa;
+  background: #fff;
   margin: 1em 0 0;
   padding: 0.5em 2% 1em;
 }
@@ -1617,7 +1617,7 @@ section.comment {
 }
 .rsspart a:hover {
   color: #ea6753;
-  background: #fafafa;
+  background: #fff;
 }
 .rsspart a::before {
   font-family: "FontAwesome";
@@ -1767,7 +1767,7 @@ section.comment {
   width: 6.875em;
   height: 6.875em;
   margin: 0 auto;
-  background: no-repeat url("img/coney.png") left top;
+  background: no-repeat url("/img/coney.png") left top;
   -webkit-background-size: 6.875em 6.875em;
   -moz-background-size: 6.875em 6.875em;
   background-size: 6.875em 6.875em;
@@ -1963,7 +1963,7 @@ footer {
   width: 6.875em;
   height: 6.875em;
   margin: 0 auto;
-  background: no-repeat url("img/coney.png") left top;
+  background: no-repeat url("/img/coney.png") left top;
   -webkit-background-size: 6.875em 6.875em;
   -moz-background-size: 6.875em 6.875em;
   background-size: 6.875em 6.875em;
@@ -2063,6 +2063,187 @@ footer {
 .copyright a:hover {
   color: #2ca6cb;
 }
+.article-content pre,
+.article-content .highlight {
+  margin: 0.5em 0;
+  overflow: auto;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 14px;
+  padding: 1em 0px 1em 30px;
+  margin-bottom: 20px;
+  line-height: 19px;
+  color: #4d4e53;
+  word-break: normal;
+  border-width: 0px 0px 0px 5px;
+  border-left-color: #558abb;
+  direction: ltr;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  position: relative;
+  text-shadow: none;
+  background: url("https://developer.cdn.mozilla.net/static/img/blueprint-dark.png") 50% 0% #fafbfc;
+}
+.article-content .highlight .gutter pre,
+.article-content .gist .gist-file .gist-data .line-numbers {
+  color: #666;
+  font-size: 0.85em;
+  line-height: 1.5;
+  font-size: 100%;
+}
+.article-content pre {
+  font-family: Monaco, Menlo, Consolas, Courier New, monospace;
+}
+.article-content pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.article-content .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.article-content .highlight table {
+  margin: 0;
+  width: auto;
+}
+.article-content .highlight td {
+  border: none;
+  padding: 0;
+}
+.article-content .highlight figcaption {
+  zoom: 1;
+  font-size: 0.85em;
+  text-align: left;
+  color: #969896;
+  line-height: 1em;
+  padding: 0.5em 0;
+  margin-bottom: 0.5em;
+}
+.article-content .highlight figcaption:before,
+.article-content .highlight figcaption:after {
+  content: "";
+  display: table;
+}
+.article-content .highlight figcaption:after {
+  clear: both;
+}
+.article-content .highlight figcaption a {
+  float: right;
+}
+.article-content .highlight .gutter pre {
+  text-align: right;
+  padding-right: 1.5em;
+}
+.article-content .gist {
+  margin: 0.5em 0;
+  background: #1d1f21;
+  padding: 1em 2%;
+}
+.article-content .gist .gist-file {
+  border: none;
+  font-family: Monaco, Menlo, Consolas, Courier New, monospace;
+  margin: 0;
+}
+.article-content .gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+.article-content .gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 1.5em 0 0;
+}
+.article-content .gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+.article-content .gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.article-content .gist .gist-file .gist-meta {
+  background: #1d1f21;
+  color: #969896;
+  font: 0.85em "Georgia", serif;
+  padding: 0;
+  margin-top: 1em;
+  text-shadow: none;
+}
+.article-content .gist .gist-file .gist-meta a {
+  color: #2ca6cb;
+  font-weight: normal;
+}
+.article-content .gist .gist-file .gist-meta a:hover {
+  color: #ea6753;
+}
+pre .comment {
+  color: #969896;
+}
+pre .title,
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .tag .title,
+pre .pi,
+pre .doctype,
+pre .id,
+pre .class,
+pre .pseudo {
+  color: #c66;
+}
+pre .number,
+pre .preprocessor,
+pre .pragma,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #de935f;
+}
+pre .class .title,
+pre .rules .attribute {
+  color: #f0c674;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .symbol,
+pre .cdata {
+  color: #b5bd68;
+}
+pre .css .hexcolor {
+  color: #8abeb7;
+}
+pre .function,
+pre .function .title,
+pre .decorator,
+pre .python .title,
+pre .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #81a2be;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #b294bb;
+}
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
 .ds-highlight {
   color: #2ca6cb !important;
 }
@@ -2070,7 +2251,7 @@ footer {
   color: #ea6753 !important;
 }
 .ds-avatar {
-  background: #fafafa !important;
+  background: #fff !important;
 }
 .ds-avatar img {
   width: 54px !important;
@@ -2142,7 +2323,7 @@ textarea::-moz-placeholder {
   color: #817c7c !important;
 }
 .article-gallery {
-  background: #fafafa;
+  background: #fff;
   position: relative;
 }
 .article-gallery-photos {
