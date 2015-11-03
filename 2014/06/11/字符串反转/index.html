@@ -7,12 +7,13 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>Hello World | hello-javascript</title>
+    <title>字符串反转 | hello-javascript</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="当下的七炎">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+    <meta name="description" content="方法1123456789var arr=&quot;123456&quot;;var str=[];for(i=0;i&amp;lt;arr.length;i++)&amp;#123;	str.push(arr[i]);	&amp;#125;str.reverse();var dd=str.join(&quot;&quot;);alert(dd);
+方法2123">
     
     
     
@@ -75,15 +76,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/23/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2014/06/11/字符串反转/" title="字符串反转" itemprop="url">字符串反转</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://raclen.win" title="当下的七炎">当下的七炎</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-10-23T08:13:28.081Z" itemprop="datePublished">2015-10-23</time>
-    更新日期:<time datetime="2015-10-23T08:13:28.077Z" itemprop="dateModified">2015-10-23</time>
+    <time datetime="2014-06-11T01:31:54.000Z" itemprop="datePublished">2014-06-11</time>
+    更新日期:<time datetime="2015-11-03T10:27:01.457Z" itemprop="dateModified">2015-11-03</time>
     
   </p>
 </header>
@@ -92,28 +93,31 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法1"><span class="toc-number">1.</span> <span class="toc-text">方法1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法2"><span class="toc-number">2.</span> <span class="toc-text">方法2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法3"><span class="toc-number">3.</span> <span class="toc-text">方法3</span></a></li></ol>
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span><span class="number">3333333333333333</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-  
+		<h2 id="方法1">方法1</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=<span class="string">"123456"</span>;</span><br><span class="line"><span class="keyword">var</span> str=[];</span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">	str.push(arr[i]);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">str.reverse();</span><br><span class="line"><span class="keyword">var</span> dd=str.join(<span class="string">""</span>);</span><br><span class="line">alert(dd);</span><br></pre></td></tr></table></figure>
+<h2 id="方法2">方法2</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=<span class="string">"123456"</span>;</span><br><span class="line"><span class="keyword">var</span> str=<span class="string">""</span>;</span><br><span class="line"><span class="keyword">for</span>(i=arr.length-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">	str+=arr[i];</span><br><span class="line">	&#125;</span><br><span class="line">alert(str);</span><br></pre></td></tr></table></figure>
+<h2 id="方法3">方法3</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//数组排序</span></span><br><span class="line"><span class="built_in">Array</span>.prototype.sorts=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">this</span>.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;<span class="keyword">return</span> a-b;&#125;)</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/js/">js</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/javascript/">javascript</a>
+</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://raclen.win/2015/10/23/hello-world/" data-title="Hello World | hello-javascript" data-tsina="null" class="share clearfix">
+  <div data-url="http://raclen.win/2014/06/11/字符串反转/" data-title="字符串反转 | hello-javascript" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -123,18 +127,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/10/23/几个不错css-loading动画/" title="几个不错css-loading动画">
+ <a href="/2014/06/11/总结一下jquery跨域/" title="总结一下jquery跨域">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  几个不错css-loading动画</span>
+  总结一下jquery跨域</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2014/12/05/git常用命令/"  title="git常用命令">
+<a href="/2014/06/09/点击第二个，删除第一个，追加到后面/"  title="点击第二个，删除第一个，追加到后面">
  <strong>NEXT:</strong><br/> 
- <span>git常用命令
+ <span>点击第二个，删除第一个，追加到后面
 </span>
 </a>
 </div>
@@ -144,7 +148,7 @@
 	
 <section class="comment">
 	
-	<div class="ds-thread" data-title="Hello World" data-thread-key="hello-world" data-author-key="当下的七炎" data-url="http://raclen.win/post/hello-world"></div>
+	<div class="ds-thread" data-title="字符串反转" data-thread-key="字符串反转" data-author-key="当下的七炎" data-url="http://raclen.win/post/字符串反转"></div>
 	
 </section>
 
@@ -154,7 +158,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法1"><span class="toc-number">1.</span> <span class="toc-text">方法1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法2"><span class="toc-number">2.</span> <span class="toc-text">方法2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法3"><span class="toc-number">3.</span> <span class="toc-text">方法3</span></a></li></ol>
   </div>
 
 <div id="asidepart">

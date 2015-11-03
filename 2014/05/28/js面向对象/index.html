@@ -7,12 +7,12 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>几个不错css-loading动画 | hello-javascript</title>
+    <title>js面向对象 | hello-javascript</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="当下的七炎">
     
-    <meta name="description" content="看jsfiddle效果">
+    <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061//封装function _objEvent() &amp;#123;    th">
     
     
     
@@ -75,15 +75,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/23/post/" title="几个不错css-loading动画" itemprop="url">几个不错css-loading动画</a>
+      <a href="/2014/05/28/js面向对象/" title="js面向对象" itemprop="url">js面向对象</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://raclen.win" title="当下的七炎">当下的七炎</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-10-23T08:16:48.000Z" itemprop="datePublished">2015-10-23</time>
-    更新日期:<time datetime="2015-11-03T06:54:20.597Z" itemprop="dateModified">2015-11-03</time>
+    <time datetime="2014-05-28T01:19:00.000Z" itemprop="datePublished">2014-05-28</time>
+    更新日期:<time datetime="2015-11-03T10:16:44.710Z" itemprop="dateModified">2015-11-03</time>
     
   </p>
 </header>
@@ -92,18 +92,16 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
-		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#看jsfiddle效果"><span class="toc-number">1.</span> <span class="toc-text">看jsfiddle效果</span></a></li></ol>
+		
 		</div>
 		
-		<h3 id="看jsfiddle效果">看<code>jsfiddle</code>效果</h3><iframe width="100%" height="500" src="//jsfiddle.net/r297vohz/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-  
+		<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//封装</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">_objEvent</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>._callBack = <span class="string">""</span>;<span class="comment">//记录回调函数</span></span><br><span class="line">    <span class="keyword">this</span>._setCallBack = <span class="function"><span class="keyword">function</span> (<span class="params">callback</span>)//保存回调寒素</span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span>(callback) == <span class="string">"function"</span>)<span class="comment">//判断回调函数</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>._callBack = callback;<span class="comment">//保存回调函数</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>._onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)//执行保存的回调函数</span><br><span class="line">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span>(<span class="keyword">this</span>._callBack) == <span class="string">"function"</span>)<span class="comment">//判断回调函数</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">this</span>._callBack();<span class="comment">//这里少了个()号执行回调</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showkey</span>(<span class="params"></span>)//回调函数</span><br><span class="line"></span>&#123;</span><br><span class="line">    alert(<span class="string">"miaomiaomiao"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> obj1 = <span class="keyword">new</span> _objEvent();<span class="comment">//实例化</span></span><br><span class="line">obj1._setCallBack(showkey);<span class="comment">//给对象设置回调函数</span></span><br><span class="line">obj1._onclick();<span class="comment">//执行回调</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//继承</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.age = age;</span><br><span class="line">    <span class="keyword">this</span>.sayname = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        alert(<span class="string">"sayname"</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Person.prototype=&#123;</span></span><br><span class="line"><span class="comment">//    hobby:function()&#123;</span></span><br><span class="line"><span class="comment">//       return "片片鱼";</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//       &#125;</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//    &#125;</span></span><br><span class="line">Person.prototype.hobby = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="string">"吃片片鱼"</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">DDD</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//Person.call(this,name,age)</span></span><br><span class="line">    <span class="keyword">this</span>.eat = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">//return "dddd";</span></span><br><span class="line">        <span class="comment">//call(Presson.hobby());</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">DDD.prototype = <span class="keyword">new</span> Person();</span><br><span class="line"><span class="keyword">var</span> lxy = <span class="keyword">new</span> Person(<span class="string">"罗雪燕"</span>, <span class="string">"21"</span>);</span><br><span class="line"><span class="comment">//alert(lxy.name+""+lxy.hobby());</span></span><br><span class="line"><span class="keyword">var</span> wx = <span class="keyword">new</span> DDD(<span class="string">"王潇"</span>, <span class="string">"22"</span>);</span><br><span class="line">wx.sayname();</span><br><span class="line">wx.hobby();</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/iframe-CSS3-loading/">iframe CSS3 loading</a>
+  <span></span> <a href="/tags/js/">js</a>
   </div>
 
 
@@ -116,7 +114,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://raclen.win/2015/10/23/post/" data-title="几个不错css-loading动画 | hello-javascript" data-tsina="null" class="share clearfix">
+  <div data-url="http://raclen.win/2014/05/28/js面向对象/" data-title="js面向对象 | hello-javascript" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -126,18 +124,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/10/23/post-1/" title="post-1">
+ <a href="/2014/05/29/动态table不支持onclick/" title="动态table不支持onclick">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  post-1</span>
+  动态table不支持onclick</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2015/10/23/hello-world/"  title="Hello World">
+<a href="/2014/05/19/简单购物车结算/"  title="简单购物车结算">
  <strong>NEXT:</strong><br/> 
- <span>Hello World
+ <span>简单购物车结算
 </span>
 </a>
 </div>
@@ -147,7 +145,7 @@
 	
 <section class="comment">
 	
-	<div class="ds-thread" data-title="几个不错css-loading动画" data-thread-key="post" data-author-key="当下的七炎" data-url="http://raclen.win/post/post"></div>
+	<div class="ds-thread" data-title="js面向对象" data-thread-key="js面向对象" data-author-key="当下的七炎" data-url="http://raclen.win/post/js面向对象"></div>
 	
 </section>
 
@@ -157,7 +155,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
-  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#看jsfiddle效果"><span class="toc-number">1.</span> <span class="toc-text">看jsfiddle效果</span></a></li></ol>
+  
   </div>
 
 <div id="asidepart">
@@ -185,7 +183,13 @@
 	<p class="asidetitle">分類</p>
 		<ul>
 		
-			<li><a href="/categories/javascript/" title="javascript">javascript<sup>2</sup></a></li>
+			<li><a href="/categories/css/" title="css">css<sup>3</sup></a></li>
+		
+			<li><a href="/categories/javascript/" title="javascript">javascript<sup>15</sup></a></li>
+		
+			<li><a href="/categories/工具/" title="工具">工具<sup>2</sup></a></li>
+		
+			<li><a href="/categories/生活/" title="生活">生活<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -196,9 +200,15 @@
 	<p class="asidetitle">標簽</p>
 		<ul class="clearfix">
 		
+			<li><a href="/tags/css/" title="css">css<sup>3</sup></a></li>
+		
+			<li><a href="/tags/git/" title="git">git<sup>2</sup></a></li>
+		
 			<li><a href="/tags/iframe-CSS3-loading/" title="iframe CSS3 loading">iframe CSS3 loading<sup>1</sup></a></li>
 		
-			<li><a href="/tags/javascript/" title="javascript">javascript<sup>1</sup></a></li>
+			<li><a href="/tags/js/" title="js">js<sup>14</sup></a></li>
+		
+			<li><a href="/tags/生活/" title="生活">生活<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -221,7 +231,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">標簽雲</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/iframe-CSS3-loading/" style="font-size: 10px;">iframe CSS3 loading</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a>
+       <a href="/tags/css/" style="font-size: 16.67px;">css</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/iframe-CSS3-loading/" style="font-size: 10px;">iframe CSS3 loading</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a>
     </div>
   </div>
 
