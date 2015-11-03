@@ -909,7 +909,14 @@ article .article-content h3 >code,
 article .article-content h4 >code,
 article .article-content h5 >code,
 article .article-content h6 >code {
-  color: #a3a3a3;
+  background: #fbedeb;
+  color: #e2678f;
+  padding: 0 5px;
+  margin: 0 2px;
+  font-size: 0.9em;
+  -webkit-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 article .article-content hr {
   border: 1px solid #dbdbdb;
