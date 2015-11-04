@@ -7,7 +7,7 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>图片滑动，每次移动一个 | hello-javascript</title>
+    <title>图片滑动，每次移动一个 | 当下的七炎</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="当下的七炎">
@@ -17,7 +17,7 @@
     
     
     
-    <link rel="alternate" href="atom.xml" title="hello-javascript" type="application/atom+xml">
+    <link rel="alternate" href="atom.xml" title="当下的七炎" type="application/atom+xml">
     
     
     <link rel="icon" href="/img/favicon.ico">
@@ -43,7 +43,7 @@
       <div>
 		
 			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="hello-javascript">hello-javascript</a></h1>
+				<h1 class="site-name"><a href="/" title="当下的七炎">当下的七炎</a></h1>
 				<a class="blog-motto"></a>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
@@ -83,7 +83,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-09-23T02:36:52.000Z" itemprop="datePublished">2015-09-23</time>
-    更新日期:<time datetime="2015-11-04T06:29:09.255Z" itemprop="dateModified">2015-11-04</time>
+    更新日期:<time datetime="2015-11-04T07:18:33.231Z" itemprop="dateModified">2015-11-04</time>
     
   </p>
 </header>
@@ -96,7 +96,7 @@
 		</div>
 		
 		<p>这东西几行代码就写完了，一些插件写得那么多，吓人<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head lang="en"&gt;</span><br><span class="line">    &lt;meta charset="UTF-8"&gt;</span><br><span class="line">    &lt;title&gt;多张图片转换&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id="box"&gt;</span><br><span class="line">    &lt;div id="pre" class="tip"&gt;&lt;a href="javascript:;"&gt;&lt;&lt;/a&gt;&lt;/div&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;&lt;img src="image/P_000.jpg" alt="P_000"/&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;img src="image/P_001.jpg" alt="P_001"/&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;img src="image/P_002.jpg" alt="P_002"/&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;img src="image/P_010.jpg" alt="P_010"/&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;img src="image/P_012.jpg" alt="P_012"/&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;img src="image/P_014.jpg" alt="P_014"/&gt;&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;&lt;img src="image/P_015.jpg" alt="P_015"/&gt;&lt;/li&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">    &lt;div id="next" class="tip"&gt;&lt;a href="javascript:;"&gt;&gt;&lt;/a&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var opre = document.getElementById('pre');</span><br><span class="line">    var onext = document.getElementById('next');</span><br><span class="line">    var obox = document.getElementById('box');</span><br><span class="line">    var oul = obox.getElementsByTagName('ul')[0];</span><br><span class="line">    var oli = oul.getElementsByTagName('li');</span><br><span class="line">    opre.addEventListener('click', function () &#123;</span><br><span class="line">        oul.appendChild(oli[0]);</span><br><span class="line">    &#125;);</span><br><span class="line">    onext.addEventListener('click', function () &#123;</span><br><span class="line">        var len = oli.length - 1;</span><br><span class="line">        oul.insertBefore(oli[len], oli[0]);</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
-<p>全部代码在<a href="https://github.com/ralcen/jquery/blob/master/test-picsSlide.html" target="_blank" rel="external">https://github.com/ralcen/jquery/blob/master/test-picsSlide.html</a><br>预览地址<a href="http://ralcen.github.io/dome/test-picsSlide.html" target="_blank" rel="external">http://ralcen.github.io/dome/test-picsSlide.html</a></p>
+<p>全部代码在<a href="https://github.com/ralcen/jquery/blob/master/test-picsslide.html" target="_blank" rel="external">https://github.com/ralcen/jquery/blob/master/test-picsslide.html</a><br>预览地址<a href="http://ralcen.github.io/dome/test-picsslide.html" target="_blank" rel="external">http://ralcen.github.io/dome/test-picsslide.html</a></p>
 <p>部署静态网页到GitHub<br>注册设置GitHub</p>
 <ul>
 <li>登录GitHub，注册自定义用户名如wsgzao</li>
@@ -122,7 +122,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://raclen.win/2015/09/23/图片滑动，每次移动一个/" data-title="图片滑动，每次移动一个 | hello-javascript" data-tsina="null" class="share clearfix">
+  <div data-url="http://raclen.win/2015/09/23/图片滑动，每次移动一个/" data-title="图片滑动，每次移动一个 | 当下的七炎" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -191,11 +191,9 @@
 	<p class="asidetitle">分類</p>
 		<ul>
 		
-			<li><a href="/categories/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
-		
 			<li><a href="/categories/css/" title="css">css<sup>8</sup></a></li>
 		
-			<li><a href="/categories/javascript/" title="javascript">javascript<sup>39</sup></a></li>
+			<li><a href="/categories/javascript/" title="javascript">javascript<sup>40</sup></a></li>
 		
 			<li><a href="/categories/other/" title="other">other<sup>3</sup></a></li>
 		
@@ -224,7 +222,7 @@
 		
 			<li><a href="/tags/git/" title="git">git<sup>2</sup></a></li>
 		
-			<li><a href="/tags/iframe-CSS3-loading/" title="iframe CSS3 loading">iframe CSS3 loading<sup>1</sup></a></li>
+			<li><a href="/tags/iframe-css3-loading/" title="iframe css3 loading">iframe css3 loading<sup>1</sup></a></li>
 		
 			<li><a href="/tags/index/" title="index">index<sup>1</sup></a></li>
 		
@@ -273,7 +271,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">標簽雲</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/box-pack/" style="font-size: 10px;">box-pack</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/css/" style="font-size: 16.67px;">css</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/flex/" style="font-size: 10px;">flex</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/iframe-CSS3-loading/" style="font-size: 10px;">iframe CSS3 loading</a> <a href="/tags/index/" style="font-size: 10px;">index</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/nodejs/" style="font-size: 13.33px;">nodejs</a> <a href="/tags/other/" style="font-size: 10px;">other</a> <a href="/tags/rem/" style="font-size: 10px;">rem</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/sae/" style="font-size: 10px;">sae</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/布局/" style="font-size: 13.33px;">布局</a> <a href="/tags/数组/" style="font-size: 13.33px;">数组</a> <a href="/tags/日历/" style="font-size: 10px;">日历</a> <a href="/tags/模板/" style="font-size: 10px;">模板</a> <a href="/tags/正则/" style="font-size: 10px;">正则</a> <a href="/tags/正则表达式/" style="font-size: 10px;">正则表达式</a> <a href="/tags/滑动/" style="font-size: 13.33px;">滑动</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/编程/" style="font-size: 10px;">编程</a> <a href="/tags/表单/" style="font-size: 10px;">表单</a> <a href="/tags/触摸/" style="font-size: 10px;">触摸</a> <a href="/tags/跨域/" style="font-size: 13.33px;">跨域</a> <a href="/tags/闭包/" style="font-size: 10px;">闭包</a> <a href="/tags/面试题/" style="font-size: 10px;">面试题</a> <a href="/tags/验证/" style="font-size: 10px;">验证</a>
+       <a href="/tags/box-pack/" style="font-size: 10px;">box-pack</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/css/" style="font-size: 16.67px;">css</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/flex/" style="font-size: 10px;">flex</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/iframe-css3-loading/" style="font-size: 10px;">iframe css3 loading</a> <a href="/tags/index/" style="font-size: 10px;">index</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/nodejs/" style="font-size: 13.33px;">nodejs</a> <a href="/tags/other/" style="font-size: 10px;">other</a> <a href="/tags/rem/" style="font-size: 10px;">rem</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/sae/" style="font-size: 10px;">sae</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/布局/" style="font-size: 13.33px;">布局</a> <a href="/tags/数组/" style="font-size: 13.33px;">数组</a> <a href="/tags/日历/" style="font-size: 10px;">日历</a> <a href="/tags/模板/" style="font-size: 10px;">模板</a> <a href="/tags/正则/" style="font-size: 10px;">正则</a> <a href="/tags/正则表达式/" style="font-size: 10px;">正则表达式</a> <a href="/tags/滑动/" style="font-size: 13.33px;">滑动</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/编程/" style="font-size: 10px;">编程</a> <a href="/tags/表单/" style="font-size: 10px;">表单</a> <a href="/tags/触摸/" style="font-size: 10px;">触摸</a> <a href="/tags/跨域/" style="font-size: 13.33px;">跨域</a> <a href="/tags/闭包/" style="font-size: 10px;">闭包</a> <a href="/tags/面试题/" style="font-size: 10px;">面试题</a> <a href="/tags/验证/" style="font-size: 10px;">验证</a>
     </div>
   </div>
 

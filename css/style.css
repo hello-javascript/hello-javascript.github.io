@@ -1001,7 +1001,7 @@ article .article-content video,
 article .article-content figure img {
   max-width: 100%;
   display: block;
-  margin: auto;
+/*margin auto*/
   height: auto;
   vertical-align: middle;
   padding-top: 0.5em;
@@ -2072,6 +2072,7 @@ footer {
 .article-content pre,
 .article-content .highlight {
   margin: 0.5em 0;
+  border-left: 5px solid #558abb;
   overflow: auto;
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
   font-size: 14px;
