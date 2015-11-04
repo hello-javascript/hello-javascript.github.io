@@ -7,12 +7,13 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>Hello World | hello-javascript</title>
+    <title>常用sql语句 | hello-javascript</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="当下的七炎">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+    <meta name="description" content="判断用户名是否存在1SELECT name FROM `user` WHERE name=&#39;$name&#39; limit 1
+判断登陆是否成功1select uid from user where username=&#39;$username&#39; and password=&#39;$password&#39; limit 1">
     
     
     
@@ -75,15 +76,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/23/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2014/06/27/常用sql语句/" title="常用sql语句" itemprop="url">常用sql语句</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://raclen.win" title="当下的七炎">当下的七炎</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-10-23T08:13:28.081Z" itemprop="datePublished">2015-10-23</time>
-    更新日期:<time datetime="2015-10-23T08:13:28.077Z" itemprop="dateModified">2015-10-23</time>
+    <time datetime="2014-06-27T15:25:41.000Z" itemprop="datePublished">2014-06-27</time>
+    更新日期:<time datetime="2015-11-04T02:42:28.303Z" itemprop="dateModified">2015-11-04</time>
     
   </p>
 </header>
@@ -92,28 +93,35 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span><span class="number">3333333333333333</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<p>判断用户名是否存在<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT name FROM <span class="string">`user`</span> WHERE name=<span class="string">'$name'</span> limit <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<p>判断登陆是否成功<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select uid from user where username=<span class="string">'$username'</span> and password=<span class="string">'$password'</span> limit <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<p>数据记录筛选<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sql=<span class="string">"select * from 数据表 where 字段名=字段值 order by 字段名 "</span></span><br><span class="line">sql=<span class="string">"select * from 数据表 where 字段名 like ‘%字段值%‘ order by 字段名 "</span></span><br><span class="line">sql=<span class="string">"select top 10 * from 数据表 where 字段名 order by 字段名 "</span></span><br><span class="line">sql=<span class="string">"select * from 数据表 where 字段名 in (‘值1‘,‘值2‘,‘值3‘)"</span></span><br></pre></td></tr></table></figure></p>
+<p>更新数据记录：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sql=<span class="string">"update 数据表 set 字段名=字段值 where 条件表达式"</span></span><br><span class="line">sql=<span class="string">"update 数据表 set 字段1=值1,字段2=值2 …… 字段n=值n where 条件表达式"</span></span><br></pre></td></tr></table></figure></p>
+<p>删除数据记录：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sql=<span class="string">"delete from 数据表 where 条件表达式"</span></span><br><span class="line">sql=<span class="string">"delete from 数据表"</span> (将数据表所有记录删除)</span><br></pre></td></tr></table></figure></p>
+<p>添加数据记录：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sql=<span class="string">"insert into 数据表 (字段1,字段2,字段3 …) valuess (值1,值2,值3 …)"</span></span><br><span class="line">sql=<span class="string">"insert into 目标数据表 select * from 源数据表"</span> (把源数据表的记录添加到目标数据表)</span><br></pre></td></tr></table></figure></p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/sql/">sql</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/other/">other</a>
+</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://raclen.win/2015/10/23/hello-world/" data-title="Hello World | hello-javascript" data-tsina="null" class="share clearfix">
+  <div data-url="http://raclen.win/2014/06/27/常用sql语句/" data-title="常用sql语句 | hello-javascript" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -123,18 +131,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/10/23/几个不错css-loading动画/" title="几个不错css-loading动画">
+ <a href="/2014/07/15/总结了下json的遍历/" title="总结了下json的遍历">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  几个不错css-loading动画</span>
+  总结了下json的遍历</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2014/12/05/git常用命令/"  title="git常用命令">
+<a href="/2014/06/27/新浪Sae数据库连接/"  title="新浪Sae数据库连接">
  <strong>NEXT:</strong><br/> 
- <span>git常用命令
+ <span>新浪Sae数据库连接
 </span>
 </a>
 </div>
@@ -144,7 +152,7 @@
 	
 <section class="comment">
 	
-	<div class="ds-thread" data-title="Hello World" data-thread-key="hello-world" data-author-key="当下的七炎" data-url="http://raclen.win/post/hello-world"></div>
+	<div class="ds-thread" data-title="常用sql语句" data-thread-key="常用sql语句" data-author-key="当下的七炎" data-url="http://raclen.win/post/常用sql语句"></div>
 	
 </section>
 
@@ -154,7 +162,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  
   </div>
 
 <div id="asidepart">
@@ -182,9 +190,13 @@
 	<p class="asidetitle">分類</p>
 		<ul>
 		
-			<li><a href="/categories/css/" title="css">css<sup>3</sup></a></li>
+			<li><a href="/categories/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
 		
-			<li><a href="/categories/javascript/" title="javascript">javascript<sup>15</sup></a></li>
+			<li><a href="/categories/css/" title="css">css<sup>8</sup></a></li>
+		
+			<li><a href="/categories/javascript/" title="javascript">javascript<sup>39</sup></a></li>
+		
+			<li><a href="/categories/other/" title="other">other<sup>3</sup></a></li>
 		
 			<li><a href="/categories/工具/" title="工具">工具<sup>2</sup></a></li>
 		
@@ -199,15 +211,45 @@
 	<p class="asidetitle">標簽</p>
 		<ul class="clearfix">
 		
+			<li><a href="/tags/box-pack/" title="box-pack">box-pack<sup>1</sup></a></li>
+		
+			<li><a href="/tags/bug/" title="bug">bug<sup>1</sup></a></li>
+		
 			<li><a href="/tags/css/" title="css">css<sup>3</sup></a></li>
+		
+			<li><a href="/tags/express/" title="express">express<sup>1</sup></a></li>
+		
+			<li><a href="/tags/flex/" title="flex">flex<sup>1</sup></a></li>
 		
 			<li><a href="/tags/git/" title="git">git<sup>2</sup></a></li>
 		
 			<li><a href="/tags/iframe-CSS3-loading/" title="iframe CSS3 loading">iframe CSS3 loading<sup>1</sup></a></li>
 		
-			<li><a href="/tags/js/" title="js">js<sup>14</sup></a></li>
+			<li><a href="/tags/index/" title="index">index<sup>1</sup></a></li>
 		
-			<li><a href="/tags/生活/" title="生活">生活<sup>1</sup></a></li>
+			<li><a href="/tags/js/" title="js">js<sup>16</sup></a></li>
+		
+			<li><a href="/tags/nodejs/" title="nodejs">nodejs<sup>2</sup></a></li>
+		
+			<li><a href="/tags/other/" title="other">other<sup>1</sup></a></li>
+		
+			<li><a href="/tags/rem/" title="rem">rem<sup>1</sup></a></li>
+		
+			<li><a href="/tags/reset/" title="reset">reset<sup>1</sup></a></li>
+		
+			<li><a href="/tags/sae/" title="sae">sae<sup>1</sup></a></li>
+		
+			<li><a href="/tags/sql/" title="sql">sql<sup>1</sup></a></li>
+		
+			<li><a href="/tags/动画/" title="动画">动画<sup>1</sup></a></li>
+		
+			<li><a href="/tags/布局/" title="布局">布局<sup>2</sup></a></li>
+		
+			<li><a href="/tags/数组/" title="数组">数组<sup>2</sup></a></li>
+		
+			<li><a href="/tags/日历/" title="日历">日历<sup>1</sup></a></li>
+		
+			<li><a href="/tags/模板/" title="模板">模板<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -230,7 +272,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">標簽雲</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/css/" style="font-size: 16.67px;">css</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/iframe-CSS3-loading/" style="font-size: 10px;">iframe CSS3 loading</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a>
+       <a href="/tags/box-pack/" style="font-size: 10px;">box-pack</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/css/" style="font-size: 16.67px;">css</a> <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/flex/" style="font-size: 10px;">flex</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/iframe-CSS3-loading/" style="font-size: 10px;">iframe CSS3 loading</a> <a href="/tags/index/" style="font-size: 10px;">index</a> <a href="/tags/js/" style="font-size: 20px;">js</a> <a href="/tags/nodejs/" style="font-size: 13.33px;">nodejs</a> <a href="/tags/other/" style="font-size: 10px;">other</a> <a href="/tags/rem/" style="font-size: 10px;">rem</a> <a href="/tags/reset/" style="font-size: 10px;">reset</a> <a href="/tags/sae/" style="font-size: 10px;">sae</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/布局/" style="font-size: 13.33px;">布局</a> <a href="/tags/数组/" style="font-size: 13.33px;">数组</a> <a href="/tags/日历/" style="font-size: 10px;">日历</a> <a href="/tags/模板/" style="font-size: 10px;">模板</a> <a href="/tags/正则/" style="font-size: 10px;">正则</a> <a href="/tags/正则表达式/" style="font-size: 10px;">正则表达式</a> <a href="/tags/滑动/" style="font-size: 13.33px;">滑动</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/编程/" style="font-size: 10px;">编程</a> <a href="/tags/表单/" style="font-size: 10px;">表单</a> <a href="/tags/触摸/" style="font-size: 10px;">触摸</a> <a href="/tags/跨域/" style="font-size: 13.33px;">跨域</a> <a href="/tags/闭包/" style="font-size: 10px;">闭包</a> <a href="/tags/面试题/" style="font-size: 10px;">面试题</a> <a href="/tags/验证/" style="font-size: 10px;">验证</a>
     </div>
   </div>
 
