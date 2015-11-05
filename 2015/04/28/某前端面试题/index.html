@@ -45,7 +45,7 @@
 		
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="当下的七炎">当下的七炎</a></h1>
-				<a class="blog-motto"></a>
+				<a class="blog-motto">给自己算了一卦，五行之中水太多，故取名为七炎</a>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
 			</a></div>
@@ -84,7 +84,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-04-27T16:00:00.000Z" itemprop="datePublished">2015-04-28</time>
-    更新日期:<time datetime="2015-11-04T07:18:32.966Z" itemprop="dateModified">2015-11-04</time>
+    更新日期:<time datetime="2015-11-05T05:38:00.066Z" itemprop="dateModified">2015-11-05</time>
     
   </p>
 </header>
@@ -103,11 +103,11 @@
 <li><p>下面代码会输出</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">'name'</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ser</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(a)</span><br><span class="line">    <span class="keyword">var</span> a = <span class="string">'hello'</span></span><br><span class="line">    alert(a)</span><br><span class="line">    alert(b)</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        alert(<span class="string">'sss'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    alert(<span class="keyword">this</span>.a)</span><br><span class="line">&#125;</span><br><span class="line">ser()</span><br><span class="line">ser(&#123;<span class="string">'a'</span>: <span class="string">'hello world'</span>&#125;)</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>indexof的用法<br>原来数组和字符串都有这个方法，从零开始，不是1</p>
+<li><p>indexof的用法<br>原来数组和字符串都有这个方法。从零开始，不是1</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'abcdf'</span>.indexOf(<span class="string">'a'</span>) <span class="comment">//0</span></span><br><span class="line">[<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'d'</span>].indexOf(<span class="string">'a'</span>) <span class="comment">//0</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>//类似的还有slice()、concat()、lastIndexOf()</p>
+<p>类似的还有slice()、concat()、lastIndexOf()</p>
 <ol>
 <li><p>随机生成10个10到100的随机数，并排序</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRandomInt</span>(<span class="params">min, max</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (max - min)) + min;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> arr = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">    arr.push(getRandomInt(<span class="number">10</span>, <span class="number">100</span>))</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(arr);</span><br><span class="line">arr.sort(<span class="function"><span class="keyword">function</span> (<span class="params">x, y</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x - y;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(arr);</span><br></pre></td></tr></table></figure>
@@ -124,21 +124,11 @@
 <li><p>下面代码会输出什么（函数声明和函数表达式）</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> f = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="number">1</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="number">2</span>)</span><br><span class="line">&#125;</span><br><span class="line">f();<span class="comment">//1</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>什么是渐进增强（progressive enhancement）、优雅降级（graceful degradation）呢？</p>
+<li><p>什么是渐进增强（progressive enhancement）、优雅降级（graceful degradation）呢？<br>渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。<br>优雅降级 graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。<br>区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。</p>
 </li>
+<li>一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？<figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">查找浏览器缓存</span><br><span class="line">DNS解析</span><br><span class="line">进行HTTP协议会话</span><br><span class="line">客户端发送报头(请求报头)</span><br><span class="line">服务器回馈报头(响应报头)</span><br><span class="line">html文档开始下载</span><br><span class="line">文档树建立，根据标记请求所需指定MIME类型的文件</span><br><span class="line">文件显示</span><br><span class="line">浏览器这边做的工作大致分为以下几步：</span><br><span class="line">加载：根据请求的URL进行域名解析，向服务器发起请求，接收文件（HTML、<span class="keyword">JS</span>、css、图象等）。</span><br><span class="line">解析：对加载到的资源（HTML、<span class="keyword">JS</span>、css等）进行语法解析，建议相应的内部数据结构（比如HTML的DOM树，<span class="keyword">JS</span>的（对象）属性表，css的样式规则等等）</span><br></pre></td></tr></table></figure></li>
 </ol>
-<p>　　渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。</p>
-<p>　　优雅降级 graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。</p>
-<p>　　区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。</p>
-<ol>
-<li>一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</li>
-</ol>
-<p>查找浏览器缓存<br>    DNS解析<br>    进行HTTP协议会话<br>    客户端发送报头(请求报头)<br>    服务器回馈报头(响应报头)<br>    html文档开始下载<br>    文档树建立，根据标记请求所需指定MIME类型的文件<br>    文件显示<br>    [<br>    浏览器这边做的工作大致分为以下几步：</p>
-<pre><code>加载：根据请求的URL进行域名解析，向服务器发起请求，接收文件（HTML、<span class="keyword">JS</span>、css、图象等）。
-
-解析：对加载到的资源（HTML、<span class="keyword">JS</span>、css等）进行语法解析，建议相应的内部数据结构（比如HTML的DOM树，<span class="keyword">JS</span>的（对象）属性表，
-      css的样式规则等等）
-</code></pre>  
+  
 	</div>
 		<footer class="article-footer clearfix">
 

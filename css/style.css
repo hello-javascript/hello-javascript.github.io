@@ -2089,7 +2089,7 @@ footer {
   tab-size: 4;
   position: relative;
   text-shadow: none;
-  background: url("https://developer.cdn.mozilla.net/static/img/blueprint-dark.png") 50% 0% #fafbfc;
+  background: url("/img/blueprint-dark.png") 50% 0% #fafbfc;
 }
 .article-content .highlight .gutter pre,
 .article-content .gist .gist-file .gist-data .line-numbers {
