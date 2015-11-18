@@ -7,12 +7,13 @@
   <meta name="360-site-verification" content="67fbcc5a67f4c65c057315b28fa0b2c8" />
 <meta name="google-site-verification" content="2GzxQ0VtXwTSUdmGm6DzcmhTzM_I9QmzCb_pzpMzD88" />
   
-    <title>判断字符输入个数，中文为2，其他为1 | 当下的七炎</title>
+    <title>node上传图片 | 当下的七炎</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="当下的七炎">
     
-    <meta name="description" content="12345678910111213141516171819202122232425//返回val的字节长度      function getByteLen(val) &amp;#123;          var len = 0;          for (var i = 0; i &amp;lt; val.l">
+    <meta name="description" content="开始用的kindeditor编辑器，上传图片不成功，就换了wangEditor编辑器 12&quot;express&quot;: &quot;^4.13.3&quot;,&quot;multiparty&quot;: &quot;^4.1.2&quot;,
+这是node代码，需要注意的是uploadDir指向的路径文件夹要真实的存在，它不能在不存在的时候给你创建一个， 123">
     
     
     
@@ -75,15 +76,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/04/10/判断字符输入个数，中文为2，其他为1/" title="判断字符输入个数，中文为2，其他为1" itemprop="url">判断字符输入个数，中文为2，其他为1</a>
+      <a href="/2015/11/18/node上传图片/" title="node上传图片" itemprop="url">node上传图片</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://raclen.win" title="当下的七炎">当下的七炎</a>
     </p>
   <p class="article-time">
-    <time datetime="2014-04-10T03:43:51.000Z" itemprop="datePublished">2014-04-10</time>
-    更新日期:<time datetime="2015-11-04T07:18:33.133Z" itemprop="dateModified">2015-11-04</time>
+    <time datetime="2015-11-18T03:10:45.000Z" itemprop="datePublished">2015-11-18</time>
+    更新日期:<time datetime="2015-11-18T03:19:27.949Z" itemprop="dateModified">2015-11-18</time>
     
   </p>
 </header>
@@ -95,14 +96,15 @@
 		
 		</div>
 		
-		<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回val的字节长度</span></span><br><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">getByteLen</span>(<span class="params">val</span>) </span>&#123;</span><br><span class="line">          <span class="keyword">var</span> len = <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; val.length; i++) &#123;</span><br><span class="line">              <span class="keyword">if</span> (val[i].match(<span class="regexp">/[^\x00-\xff]/ig</span>) != <span class="literal">null</span>) <span class="comment">//全角</span></span><br><span class="line">                  len += <span class="number">2</span>;</span><br><span class="line">              <span class="keyword">else</span></span><br><span class="line">                  len += <span class="number">1</span>;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">return</span> len;</span><br><span class="line">      &#125;</span><br><span class="line">          $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                         <span class="keyword">var</span> text = $(<span class="string">"#album_name"</span>).val();</span><br><span class="line">                          <span class="keyword">var</span> counter = getByteLen(text);</span><br><span class="line">                         $(<span class="string">"#numtj var"</span>).text(counter);</span><br><span class="line">                         $(<span class="string">"#album_name"</span>).keyup(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">                                <span class="keyword">var</span> text = $(<span class="string">"#album_name"</span>).val();</span><br><span class="line">                                <span class="keyword">var</span> counter = getByteLen(text);</span><br><span class="line">                               $(<span class="string">"#name_word"</span>).text(counter);</span><br><span class="line">                         &#125;);</span><br><span class="line"></span><br><span class="line">          &#125;);</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"text"</span> maxlength=<span class="string">"10"</span> <span class="class"><span class="keyword">class</span></span>=<span class="string">"int_txt"</span> name=<span class="string">"album_name"</span> id=<span class="string">"album_name"</span>&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"count_txt"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"name_word"</span>&gt;</span>0<span class="tag">&lt;/<span class="title">span</span>&gt;</span>/10<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span></span><br></pre></td></tr></table></figure>  
+		<p>开始用的kindeditor编辑器，上传图片不成功，就换了<a href="https://github.com/wangfupeng1988/wangEditor" target="_blank" rel="external">wangEditor编辑器</a><br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"express"</span>: <span class="string">"^4.13.3"</span>,</span><br><span class="line"><span class="string">"multiparty"</span>: <span class="string">"^4.1.2"</span>,</span><br></pre></td></tr></table></figure></p>
+<p>这是node代码，需要注意的是uploadDir指向的路径文件夹要真实的存在，它不能在不存在的时候给你创建一个，<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">app.post(<span class="string">'/uploadImg'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> form = <span class="keyword">new</span> multiparty.Form(&#123;uploadDir:<span class="string">'./public/upload'</span>&#125;);</span><br><span class="line">    form.parse(req, <span class="function"><span class="keyword">function</span> (<span class="params">err, fields, files</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (err) &#123;</span><br><span class="line">            <span class="keyword">throw</span> err;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">console</span>.log(files)</span><br><span class="line">        <span class="keyword">var</span> image = files.file[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">var</span> path = image.path;</span><br><span class="line">        path = path.replace(<span class="regexp">/\\/g</span>, <span class="string">'/'</span>);</span><br><span class="line">        <span class="built_in">console</span>.log(path)</span><br><span class="line">        <span class="keyword">var</span> url = <span class="string">'upload'</span> + path.substr(path.lastIndexOf(<span class="string">'/'</span>), path.length);</span><br><span class="line">        res.send(url);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/js/">js</a>
+  <span></span> <a href="/tags/nodejs/">nodejs</a>
   </div>
 
 
@@ -115,7 +117,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://raclen.win/2014/04/10/判断字符输入个数，中文为2，其他为1/" data-title="判断字符输入个数，中文为2，其他为1 | 当下的七炎" data-tsina="null" class="share clearfix">
+  <div data-url="http://raclen.win/2015/11/18/node上传图片/" data-title="node上传图片 | 当下的七炎" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -124,19 +126,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2014/04/10/contains实现简单搜索/" title="contains实现简单搜索">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  contains实现简单搜索</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2014/04/08/CSS边框发光/"  title="css边框发光">
+<a href="/2015/10/23/几个不错css-loading动画/"  title="几个不错css-loading动画">
  <strong>NEXT:</strong><br/> 
- <span>css边框发光
+ <span>几个不错css-loading动画
 </span>
 </a>
 </div>
@@ -146,7 +140,7 @@
 	
 <section class="comment">
 	
-	<div class="ds-thread" data-title="判断字符输入个数，中文为2，其他为1" data-thread-key="判断字符输入个数，中文为2，其他为1" data-author-key="当下的七炎" data-url="http://raclen.win/post/判断字符输入个数，中文为2，其他为1"></div>
+	<div class="ds-thread" data-title="node上传图片" data-thread-key="node上传图片" data-author-key="当下的七炎" data-url="http://raclen.win/post/node上传图片"></div>
 	
 </section>
 
